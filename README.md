@@ -24,11 +24,13 @@ In order:
 
 7. **keggAnalysis.R**:  Filters genes from a DESeq2 output and looks for enrichment in a particular kegg pathway.  I usually use vary liberal threshold here for gene filtering since the kegg datasets are generally pretty sparce. Appropriate kegg dataset must be identified and specific script using keggseq directly in R. 
 
-## Plotting scripts
+### Plotting scripts
 
 **keggAnalysisPlotSinglePathway.R**: For plotting a particular kegg pathway with differentially expressed genes color coded.
 
 **plotASingleGene.R**: Plots time series expression curve for specific genes.
+
+### Et cetera
 
 There is some debate about feeding Kallisto counts directly into DESeq2 although these appear to be generally more philosophical than empirically driven.  See https://www.biostars.org/p/143458/#157303 for nice discussion.  The approach can be more problematic (although still mostly okay) when combining counts across the transcripts of a gene.  A more rigorous approach than simply adding counts across transcripts is to use tximport available through bioconductor.  
 
