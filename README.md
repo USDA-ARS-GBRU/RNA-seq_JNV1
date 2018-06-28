@@ -32,5 +32,5 @@ In order:
 
 ### Et cetera
 
-There is some debate about feeding Kallisto counts directly into DESeq2 although these appear to be generally more philosophical than empirically driven.  See https://www.biostars.org/p/143458/#157303 for nice discussion.  The approach can be more problematic (although still mostly okay) when combining counts across the transcripts of a gene.  A more rigorous approach than simply adding counts across transcripts is to use tximport available through bioconductor.  
+There is some debate about feeding Kallisto counts directly into DESeq2 although the arguments appear to be more philosophical than empirical.  See https://www.biostars.org/p/143458/#157303 for nice discussion.  The approach can be more problematic (although still mostly okay) when combining counts across the transcripts of a gene.  A more rigorous approach than simply adding counts across transcripts is to use tximport available through bioconductor.  
 
